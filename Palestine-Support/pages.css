@@ -1,0 +1,58 @@
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.page-container {
+    max-width: 700px;
+    width: 100%;
+}
+h1 {
+    font-size: 2.5rem;
+    border-bottom: 2px solid #d9534f;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    color: #27ae60;
+}
+p, li {
+    font-size: 1.1rem;
+}
+a {
+    color: #d9534f;
+    font-weight: 600;
+}
+a:hover {
+    text-decoration: underline;
+}
+.last-updated {
+    font-style: italic;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+.faq-item, .support-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dee2e6;
+}
+.button {
+    display: inline-block;
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+.button:hover {
+    background-color: #219d52;
+    text-decoration: none;
+}
