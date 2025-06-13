@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palestine Support Hub</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="assets/flag-waving.gif" alt="Palestine Support Hub flag" class="logo">
+           <div class="theme-switcher">
+                <button id="light-theme-btn" title="Light Mode">☀️</button>
+                <button id="dark-theme-btn" title="Dark Mode">🌙</button>
+                <button id="green-theme-btn" title="Green Mode">🌿</button>
+            </div>
+        </div>
+        <div id="daily-message" class="daily-message-card">
+            <p class="message-text"></p>
+        </div>
+        <div id="word-card" class="word-card" style="display: none;">
+            <div class="word-header">
+                <div class="word-term-wrapper">
+                    <h3 class="word-term"></h3>
+                    <p class="word-arabic"></p>
+                </div>
+                <button id="next-word-btn" title="Next Word">🔄</button>
+            </div>
+            <p class="word-definition"></p>
+        </div>
+        <div class="tabs">
+           <button class="tab-link quran" data-tab="quran">Quran</button>
+            <button class="tab-link active" data-tab="news">News</button>
+            <button class="tab-link" data-tab="support">Action</button>
+            <button class="tab-link" data-tab="community">Community</button>
+        </div>
+        <div id="news" class="tab-content active">
+            <div id="news-feed-loader">Loading news...</div>
+            <div id="news-feed"></div>
+            <div id="news-footer">
+                <div id="pagination-controls" style="display: none;">
+                    <button id="prev-page-btn" class="page-btn">«</button>
+                    <div id="page-numbers"></div>
+                    <button id="next-page-btn" class="page-btn">»</button>
+                </div>
+            </div>
+        </div>
+        <div id="support" class="tab-content">
+            <h3>What Can You Do?</h3>
+            <ul>
+                <li><strong>Educate & Amplify:</strong> Share information from reliable sources and amplify the voices of Palestinian journalists, artists, and activists.</li>
+                <li><strong>Contact Representatives:</strong> Call and email your elected officials to demand they support Palestinian human rights and international law.</li>
+                <li><strong>Support Ethical Commerce:</strong> Participate in the BDS movement and make a conscious effort to support Palestinian-owned businesses.</li>
+                <li><strong>Join Local Actions:</strong> Find and join peaceful protests, vigils, and community events to show your solidarity.</li>
+                <li><strong>Engage with Culture:</strong> Read books, watch films, and listen to music by Palestinian creators to understand and celebrate their stories.</li>
+                <li><strong>Challenge Misinformation:</strong> Respectfully correct falsehoods and provide context in conversations with friends, family, and online.</li>
+                <li><strong>Make Dua'h for them.</li>
+            </ul>
+            <h3>Donate to Humanitarian Aid</h3>
+<ul>
+    <li><a href="https://www.pcrf.net/" target="_blank">Palestine Children's Relief Fund (PCRF)</a></li>
+    <li><a href="https://www.doctorswithoutborders.org/what-we-do/countries/palestine" target="_blank">Doctors Without Borders (MSF)</a></li>
+    <li><a href="https://www.unrwa.org/" target="_blank">UNRWA (UN Agency for Palestine Refugees)</a></li>
+    <li><a href="https://www.map.org.uk/" target="_blank">Medical Aid for Palestinians (MAP)</a></li>
+</ul>
+            <!-- <h3>Sign Petitions</h3>
+            <ul>
+                <li><a href="https://www.amnesty.org/en/location/middle-east-and-north-africa/israel-and-occupied-palestinian-territories/" target="_blank" rel="noopener noreferrer">Amnesty International: Demand a Ceasefire</a></li>
+                <li><a href="https://www.change.org/p/free-palestine" target="_blank" rel="noopener noreferrer">Change.org: Free Palestine Petition</a></li>
+                <li><a href="https://sign.moveon.org/petitions/free-palestine" target="_blank" rel="noopener noreferrer">MoveOn: End Violence in Palestine</a></li>
+                <li><a href="https://secure.avaaz.org/campaign/en/recognise_palestine/" target="_blank" rel="noopener noreferrer">Avaaz: Help Palestine Become a Full UN Member</a></li>
+                <li><a href="https://viacampesina.org/en/category/regions/arab-region-and-north-africa/palestine/" target="_blank" rel="noopener noreferrer">La Via Campesina: Solidarity with Palestine</a></li>
+            </ul> -->
+            <!-- <h3>Key Activist Groups</h3>
+            <ul>
+                <li><a href="https://bdsmovement.net/" target="_blank" rel="noopener noreferrer">Boycott, Divestment, Sanctions (BDS)</a></li>
+                <li><a href="https://samidoun.net/" target="_blank" rel="noopener noreferrer">Samidoun Palestinian Prisoner Network</a></li>
+            </ul> -->
+            <h3>Learn & Witness</h3>
+<ul>
+    <li><a href="https://interactive.aljazeera.com/aje/2017/50-years-israeli-occupation-palestine/" target="_blank">Al Jazeera: 50 Years of Occupation</a></li>
+    <li><a href="https://www.visualizingpalestine.org/" target="_blank">Visualizing Palestine (Infographics)</a></li>
+    <li><a href="https://www.youtube.com/watch?v=i_Lwz_00o-I" target="_blank">Watch: 'Gaza Fights For Freedom' (Documentary)</a></li>
+</ul>
+<!-- <h3>Make Your Voice Heard</h3>
+<ul>
+    <li><a href="https://www.usa.gov/elected-officials" target="_blank">Find Your U.S. Representative</a></li>
+    <li><a href="https://www.theyworkforyou.com/" target="_blank">Find Your UK Member of Parliament (MP)</a></li>
+    <li><a href="https://www.ourcommons.ca/members/en" target="_blank">Find Your Canadian Member of Parliament</a></li>
+</ul> -->
+        </div>
+        <div id="community" class="tab-content">
+            <h3>Join the Conversation</h3>
+            <p>Connect with supporters, find resources, and stay updated on community events and social media.</p>
+             <ul>
+                <li><a href="https://letstalkpalestine.org/" target="_blank" rel="noopener noreferrer">Let’s Talk Palestine</a></li>
+                <li><a href="https://uscpr.org/connect/" target="_blank" rel="noopener noreferrer">US Campaign for Palestinian Rights (USCPR)</a></li>
+                <li><a href="https://palestinianyouthmovement.com/" target="_blank" rel="noopener noreferrer">Palestinian Youth Movement (PYM)</a></li>
+                <li><a href="https://afsc.org/action-hour" target="_blank" rel="noopener noreferrer">AFSC: Action Hour for a Free Palestine</a></li>
+                <li><a href="https://x.com/search?q=%23FreePalestine" target="_blank" rel="noopener noreferrer">X Platform (search #FreePalestine)</a></li>
+                <li><a href="https://www.instagram.com/letstalkpal/" target="_blank" rel="noopener noreferrer">Instagram (follow @letstalkpal, @jewishvoiceforpeace)</a></li>
+            </ul>
+        </div>
+        <div id="quran" class="tab-content">
+            <div id="quran-card" class="quran-card" style="display: none;">
+                <div class="quran-header">
+                    <h4>Quran on Palestine</h4>
+                    <span class="quran-verse-ref"></span>
+                </div>
+                <p class="quran-arabic"></p>
+                <p class="quran-english"></p>
+            </div>
+        </div>
+        
+        <div class="footer">
+             <p>Share the cause:</p>
+            <div class="social-share">
+                <a id="share-twitter" href="#" target="_blank">X</a>
+                <a id="share-facebook" href="#" target="_blank">Facebook</a>
+                <a id="share-whatsapp" href="#" target="_blank">WhatsApp</a>
+            </div>
+            <div class="utility-links">
+                <a href="privacy.html" target="_blank">Privacy</a>
+                <a href="faq.html" target="_blank">FAQ</a>
+                <a href="support.html" target="_blank">Support Us</a>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

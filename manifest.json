@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Palestine Support Hub: News & Solidarity",
+  "version": "3.2",
+  "description": "The leading Palestine Chrome extension for daily news, alerts, and solidarity actions. A free Palestine digital tool for social justice. #StandWithPalestine",
+  "short_name": "Palestine Hub",
+  "icons": {
+    "128": "assets/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "assets/icon128.png"
+    }
+  },
+  "permissions": [
+    "storage",
+    "notifications",
+    "alarms",
+    "offscreen"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://*.aljazeera.com/",
+    "https://*.palestinechronicle.com/",
+    "https://*.mondoweiss.net/",
+    "https://*.electronicintifada.net/"
+
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "data/word.json",
+        "data/quran_verses.json"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
